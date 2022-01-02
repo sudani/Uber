@@ -1,0 +1,7 @@
+node_modules
+# api keys
+.env
+key.js
+
+# CocoaPods
+/ios/Pods/

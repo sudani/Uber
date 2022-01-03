@@ -5,11 +5,13 @@ import {View, Text, StyleSheet,
 import DestinationSearch from './src/screens/DestinationSearch';
 import HomeMap from './src/components/HomeMap';
 import VehicleType from './src/components/VehicleTypes'
+import VehicleSize from './src/components/VehicleSize';
 const App = props => {
   return (
     <SafeAreaView>
      <HomeMap/>
      <VehicleType/>
+     
     </SafeAreaView>
   );
 };

@@ -11,6 +11,27 @@ PODS:
     - ReactCommon/turbomodule/core (= 0.66.4)
   - fmt (6.2.1)
   - glog (0.3.5)
+  - Google-Maps-iOS-Utils (2.1.0):
+    - Google-Maps-iOS-Utils/Clustering (= 2.1.0)
+    - Google-Maps-iOS-Utils/Geometry (= 2.1.0)
+    - Google-Maps-iOS-Utils/Heatmap (= 2.1.0)
+    - Google-Maps-iOS-Utils/QuadTree (= 2.1.0)
+    - GoogleMaps
+  - Google-Maps-iOS-Utils/Clustering (2.1.0):
+    - Google-Maps-iOS-Utils/QuadTree
+    - GoogleMaps
+  - Google-Maps-iOS-Utils/Geometry (2.1.0):
+    - GoogleMaps
+  - Google-Maps-iOS-Utils/Heatmap (2.1.0):
+    - Google-Maps-iOS-Utils/QuadTree
+    - GoogleMaps
+  - Google-Maps-iOS-Utils/QuadTree (2.1.0):
+    - GoogleMaps
+  - GoogleMaps (3.5.0):
+    - GoogleMaps/Maps (= 3.5.0)
+  - GoogleMaps/Base (3.5.0)
+  - GoogleMaps/Maps (3.5.0):
+    - GoogleMaps/Base
   - RCT-Folly (2021.06.28.00-v2):
     - boost
     - DoubleConversion
@@ -209,6 +230,12 @@ PODS:
   - React-jsinspector (0.66.4)
   - React-logger (0.66.4):
     - glog
+  - react-native-google-maps (0.29.4):
+    - Google-Maps-iOS-Utils (= 2.1.0)
+    - GoogleMaps (= 3.5.0)
+    - React-Core
+  - react-native-maps (0.29.4):
+    - React-Core
   - React-perflogger (0.66.4)
   - React-RCTActionSheet (0.66.4):
     - React-Core/RCTActionSheetHeaders (= 0.66.4)
@@ -298,6 +325,8 @@ DEPENDENCIES:
   - React-jsiexecutor (from `../node_modules/react-native/ReactCommon/jsiexecutor`)
   - React-jsinspector (from `../node_modules/react-native/ReactCommon/jsinspector`)
   - React-logger (from `../node_modules/react-native/ReactCommon/logger`)
+  - react-native-google-maps (from `../node_modules/react-native-maps`)
+  - react-native-maps (from `../node_modules/react-native-maps`)
   - React-perflogger (from `../node_modules/react-native/ReactCommon/reactperflogger`)
   - React-RCTActionSheet (from `../node_modules/react-native/Libraries/ActionSheetIOS`)
   - React-RCTAnimation (from `../node_modules/react-native/Libraries/NativeAnimation`)
@@ -316,6 +345,8 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - fmt
+    - Google-Maps-iOS-Utils
+    - GoogleMaps
 
 EXTERNAL SOURCES:
   boost:
@@ -352,6 +383,10 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/jsinspector"
   React-logger:
     :path: "../node_modules/react-native/ReactCommon/logger"
+  react-native-google-maps:
+    :path: "../node_modules/react-native-maps"
+  react-native-maps:
+    :path: "../node_modules/react-native-maps"
   React-perflogger:
     :path: "../node_modules/react-native/ReactCommon/reactperflogger"
   React-RCTActionSheet:
@@ -388,6 +423,8 @@ SPEC CHECKSUMS:
   FBReactNativeSpec: fe08c1cd7e2e205718d77ad14b34957cce949b58
   fmt: ff9d55029c625d3757ed641535fd4a75fedc7ce9
   glog: 5337263514dd6f09803962437687240c5dc39aa4
+  Google-Maps-iOS-Utils: c32891ff472eaaa1fca032beedafa1a013af7875
+  GoogleMaps: 32ca02de09de357a10ac773f2c70f1986751392d
   RCT-Folly: a21c126816d8025b547704b777a2ba552f3d9fa9
   RCTRequired: 4bf86c70714490bca4bf2696148638284622644b
   RCTTypeSafety: c475a7059eb77935fa53d2c17db299893f057d5d
@@ -400,6 +437,8 @@ SPEC CHECKSUMS:
   React-jsiexecutor: 94ce921e1d8ce7023366873ec371f3441383b396
   React-jsinspector: d0374f7509d407d2264168b6d0fad0b54e300b85
   React-logger: 933f80c97c633ee8965d609876848148e3fef438
+  react-native-google-maps: 34517207071d54f3bc23c68752bbec0217bfc79e
+  react-native-maps: a421fe6aeb74279597c4ea9598f25796108e2d89
   React-perflogger: 93075d8931c32cd1fce8a98c15d2d5ccc4d891bd
   React-RCTActionSheet: 7d3041e6761b4f3044a37079ddcb156575fb6d89
   React-RCTAnimation: 743e88b55ac62511ae5c2e22803d4f503f2a3a13
@@ -415,6 +454,6 @@ SPEC CHECKSUMS:
   RNVectorIcons: 4143ba35feebab8fdbe6bc43d1e776b393d47ac8
   Yoga: e7dc4e71caba6472ff48ad7d234389b91dadc280
 
-PODFILE CHECKSUM: 9d58d6d9e67addea0c80a8a9fc93ed783cd1f6cb
+PODFILE CHECKSUM: 7167028cd399bdcdade3fdcfe5371a0052eef712
 
 COCOAPODS: 1.11.2

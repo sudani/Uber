@@ -12,7 +12,7 @@ import HomeScreen from './src/screens/HomeScreen';
 const App = props => {
   return (
     <SafeAreaView>
-    <SearchResults/>
+    <DestinationSearch/>
      
     </SafeAreaView>
   );
